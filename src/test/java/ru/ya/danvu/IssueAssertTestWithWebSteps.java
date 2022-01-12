@@ -33,6 +33,7 @@ public class IssueAssertTestWithWebSteps {
 
     @Step("Открываем таб Issues")
     public void openIssuesTab() {
+        attachPageSource();
         $(partialLinkText("Issues")).click();
     }
 
