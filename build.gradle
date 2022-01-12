@@ -21,6 +21,10 @@ allure {
     }
 }
 
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
 repositories {
     mavenCentral()
 }
@@ -29,11 +33,12 @@ dependencies {
     testImplementation(
             'org.junit.jupiter:junit-jupiter-api:5.7.2',
             'io.qameta.allure:allure-selenide:2.17.2',
-            'com.codeborne:selenide:6.1.2'
+            'com.codeborne:selenide:5.25.0'
     )
     testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.7.2')
 }
 
 test {
     useJUnitPlatform()
+    systemProperty "file.encoding", "utf-8"
 }
