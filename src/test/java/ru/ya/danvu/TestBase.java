@@ -12,7 +12,7 @@ public class TestBase {
 
     @AfterEach
     public void afterEach() {
-        IssueAssertTestWithWebSteps IssueAssertTestWithWebSteps = new IssueAssertTestWithWebSteps();
-        IssueAssertTestWithWebSteps.attachPageSource();
+        WebSteps WebSteps = new WebSteps();
+        WebSteps.attachPageSource();
     }
 }

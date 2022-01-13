@@ -10,7 +10,7 @@ import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.linkText;
 import static org.openqa.selenium.By.partialLinkText;
 
-public class IssueAssertTestWithSteps extends TestBase {
+public class LambdaTestWithSteps extends TestBase {
 
     private static final String REPOSITORY = "eroshenkoam/allure-example";
     private static final int NUMBER = 68;
@@ -38,7 +38,7 @@ public class IssueAssertTestWithSteps extends TestBase {
 
     @Test
     public void annotatedStepsTest() {
-     IssueAssertTestWithWebSteps steps = new IssueAssertTestWithWebSteps();
+     WebSteps steps = new WebSteps();
 
      steps.openMainPage();
         steps.searchForRepository(REPOSITORY);

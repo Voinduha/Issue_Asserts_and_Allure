@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static org.openqa.selenium.By.linkText;
 import static org.openqa.selenium.By.partialLinkText;
 
-public class IssueAssertTestWithWebSteps extends TestBase {
+public class WebSteps {
 
     @Step("Открываем гитхаб")
     public void openMainPage() {
